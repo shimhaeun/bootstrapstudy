@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .brd{
+            border:2px solid #999;
+            margin-bottom: 10px;
+        }
+    </style>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" ></script>
+</head>
+<body>
+<h1>Helllobootstrap</h1>
+<div class="container text-center">
+    <div class="row">
+      <div class="col brd">Column</div>
+      <div class="col brd">Column</div>
+      <div class="col brd">Column</div>
+      <div class="col brd">Column</div>
+    </div>
+    
+    <div class="row">
+      <div class="col brd">Column</div>
+      <div class="col brd">Column</div>
+      <div class="col brd">Column</div>
+      <div class="col brd">Column</div>
+    </div>
+    <div class="row">
+        <!-- 앞 열 8개 컬럼, 뒷 열 4개 컬럼으로 구성 -->
+        <div class="col-8 brd">Column</div>
+        <div class="col-4 brd">Column</div>
+    </div>
+
+     <!-- 첫 번째 4개 열 비워두기 -->
+     <div class="row">
+         <div class="col brd offset-4">1</div>
+         <div class="col brd">2</div>
+     </div>
+
+     <h2>* 중단점 설정</h2>
+     <!-- 브라우저 크기가 768 미만일 때 레이아웃 변경 -->
+     <div class="row">
+        <div class="col-md-4 brd">1</div>
+        <div class="col-md-4 brd">2</div>
+        <div class="col-md-4 brd">3</div>
+    </div>
+     <div class="row">
+         <div class="col-md-4 col-sm-6 brd">1</div>
+         <div class="col-md-4 col-sm-6 brd">2</div>
+         <div class="col-md-4 col-sm-12 brd">3</div>
+     </div>
+
+     <h2>화면 전체 크기 container</h2>
+     <div class="container-fluid">
+        <div class="row">
+        <div class="col brd">1</div>
+        <div class="col brd">2</div>
+        <div class="col brd">3</div>
+        </div>
+     </div>
+</div>
+</div>
+</body>
+</html>
